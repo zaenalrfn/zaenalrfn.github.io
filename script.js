@@ -1,0 +1,49 @@
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+window.onscroll = function() {scrollUp()};
+
+function scrollUp() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElememtById('btn_atas').style.display ='block';
+    } else {
+        document.getElememtById('btn_atas').style.display = 'none';
+    }
+}
+
+function atas() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// bagian membuat dark mode
+
+
+// function dark(isDark) {
+//     var darkBtn = document.getElementById('btn_dark');
+//     var lightBtn = document.getElementById('btn_light');
+
+//     if(isDark) {
+//         document.body.getElements('id','darkmode');
+
+//     } else {
+//         document.body.getElements('id','');
+//     }
+// } 
