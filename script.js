@@ -18,21 +18,6 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-window.onscroll = function() {scrollUp()};
-
-function scrollUp() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        document.getElememtById('btn_atas').style.display ='block';
-    } else {
-        document.getElememtById('btn_atas').style.display = 'none';
-    }
-}
-
-function atas() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 // bagian membuat dark mode
 
 
