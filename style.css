@@ -1,39 +1,39 @@
 .jumbotron {
   padding-top: 6rem;
-  background-image: url('img/bg-m.jpg');
+  background-image: url("img/bg-m.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: white;
   padding-bottom: 4rem;
 }
 .jumbotron h1 {
-	font-family: cambria;
-	font-weight: bold;
-	color: red;
+  font-family: cambria;
+  font-weight: bold;
+  color: red;
 }
 section {
   padding-top: 8rem;
 }
 .card {
-	overflow: hidden;
-
-
+  overflow: hidden;
 }
 .card img {
-	transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
 .card:hover img {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 #blog {
-	background-image: linear-gradient(#006666,#009999)
+  background-image: linear-gradient(#006666, #009999);
 }
 .artikel {
-	text-align: center;
-	color: white;
+  text-align: center;
+  color: white;
 }
 
-.mySlides {display:none}
+.mySlides {
+  display: none;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -42,8 +42,8 @@ section {
   margin: auto;
 }
 .mySlides img {
-	width: 290px;
-	height: 290px;
+  width: 290px;
+  height: 290px;
 }
 
 /* Caption text */
@@ -91,27 +91,30 @@ section {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	padding:20px;
-	background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
 }
 footer h3 {
-	padding: 10px;
-	size: 30px;
-}
-footer h4 {
-	padding: 10px;
-	size: 90px;
-	right: 900px;
+  padding: 10px;
+  size: 30px;
 }
