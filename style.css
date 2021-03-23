@@ -1,19 +1,18 @@
-
 .jumbotron {
-	padding-top: 8rem;
-	background-image:url('img/bg-m.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	color: white;
-	height: 590px;
+  padding-top: 6rem;
+  background-image: url('img/bg-m.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-bottom: 4rem;
 }
-.jumbotron h1{
+.jumbotron h1 {
+	font-family: cambria;
 	font-weight: bold;
-	color: #CC3300;
-	text-shadow: 1px 1px 4px black;
+	color: red;
 }
 section {
-	padding-top: 8rem;
+  padding-top: 8rem;
 }
 .card {
 	overflow: hidden;
@@ -26,39 +25,14 @@ section {
 .card:hover img {
 	transform: scale(1.1);
 }
-.card-body p a {
-	text-decoration: none;
-	transition:.2s;
+#blog {
+	background-image: linear-gradient(#006666,#009999)
 }
-.card-body p a:hover {
-	color:black;
-	border-bottom: 2px solid blue;
-	transform: translateX(1.5);
-
-}
-.card-body a {
-	text-decoration: none;
-}
-.card-body a:hover {
-	color:black;
-	border-bottom: 2px solid blue;
-}
-@media screen and (max-width: 360px;) {
-	.jumbotron {
-		padding-top: 9rem;
-		height: 550px;
-	}
-}
-#blog{
-	background: linear-gradient(#008B8B,#00008B);
-	padding-bottom: 200px;
-}
-#blog .card {
-	box-shadow: 1px 1px 4px #eaeaea;
-}
-.paragraf {
+.artikel {
+	text-align: center;
 	color: white;
 }
+
 .mySlides {display:none}
 
 /* Slideshow container */
@@ -126,16 +100,6 @@ section {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-#btn_atas {
-	position: fixed;
-	cursor: pointer;
-	z-index: 9999;
-	left: 10px;
-}
 footer {
 	display: flex;
 	justify-content: center;
@@ -151,8 +115,3 @@ footer h4 {
 	size: 90px;
 	right: 900px;
 }
-
-/*#darkmode {
-	background-color: black;
-	color: white;
-}*/
